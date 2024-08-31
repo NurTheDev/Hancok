@@ -1,0 +1,40 @@
+/* ==================================Common Css ====================================== */
+:root {
+  --primary-color: #121212;
+  --secondary-color: #191919;
+  --pink-color: #ff4655;
+  --white-color: #fff;
+  --gray-color: #666;
+  /* Size */
+  --screen-size: 1320px;
+  /* Font Family */
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul, ol, li{
+    list-style: none;
+}
+img{
+    vertical-align: center;
+}
+.sectionContainer{
+    max-width: var(--screen-size);
+    margin: 0 auto;
+}
+.section_title{
+    font-size: 38px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.66px;
+    /* font-family: ; */
+}
+/* ==================================Common Css ====================================== */
