@@ -1,3 +1,5 @@
+/* google Font link */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap");
 /* ==================================Common Css ====================================== */
 :root {
   --primary-color: #121212;
@@ -8,7 +10,10 @@
   /* Size */
   --screen-size: 1320px;
   /* Font Family */
-
+  --oswald-font: "Oswald", sans-serif;
+  --barlow-font: "Barlow Condensed", sans-serif;
+  /* font size */
+  --small-font-size: 16px;
 }
 * {
   margin: 0;
@@ -20,21 +25,34 @@ a {
   display: inline-block;
   text-decoration: none;
 }
-ul, ol, li{
-    list-style: none;
+ul,
+ol,
+li {
+  list-style: none;
 }
-img{
-    vertical-align: center;
+img {
+  vertical-align: center;
 }
-.sectionContainer{
-    max-width: var(--screen-size);
-    margin: 0 auto;
+.sectionContainer {
+  max-width: var(--screen-size);
+  margin: 0 auto;
 }
-.section_title{
-    font-size: 38px;
-    font-weight: 600;
-    line-height: normal;
-    letter-spacing: 2.66px;
-    /* font-family: ; */
+.section_title_barlow-font {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.66px;
+  font-family: var(--barlow-font);
+  /* font-family: ; */
 }
+
+.section_title_oswald-font {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.66px;
+  font-family: var(--oswald-font);
+  /* font-family: ; */
+}
+
 /* ==================================Common Css ====================================== */
