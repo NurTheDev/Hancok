@@ -40,36 +40,43 @@ img {
   max-width: var(--screen-size);
   margin: 0 auto;
 }
-.section_title_barlow-font {
+.section_title_barlow_font {
   font-size: 38px;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 2.66px;
   font-family: var(--barlow-font);
-  /* font-family: ; */
+  text-transform: uppercase;
+  position: relative;
+  color: var(--white-color);
 }
-.section_title_barlow-font::after {
+.section_title_barlow_font::after {
   width: 120px;
   display: block;
   height: 3px;
   background: var(--pink-color);
   content: "";
-  margin-right: 6px;
+  position: absolute;
 }
-.section_title_oswald-font {
+.section_title_oswald_font {
   font-size: 38px;
   font-weight: 600;
   line-height: normal;
   letter-spacing: 2.66px;
   font-family: var(--oswald-font);
+  text-transform: uppercase;
+  position: relative;
+  color: var(--white-color);
 }
-.section_title_oswald-font::after {
+.section_title_oswald_font::after {
   width: 120px;
   display: block;
   height: 3px;
   background: var(--pink-color);
   content: "";
-  margin-left: 6px;
+  position: absolute;
+  right: 180px;
+  bottom: 0;
 }
 /* ==================================Common Css ====================================== */
 /* ====================navbar css=================== */
@@ -272,7 +279,13 @@ nav .navbarRight span {
   background: var(--pink-color);
   color: var(--white-color);
 }
-
+#About {
+  background: var(--primary-color);
+  padding: 34px 0;
+}
+#About .title_width {
+  max-width: 518px;
+}
 /* Responsive with Media quarey */
 @media screen and (max-width: 570px) {
   nav {
