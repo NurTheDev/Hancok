@@ -7,6 +7,7 @@ html {
 :root {
   --primary-color: #121212;
   --secondary-color: #191919;
+  --dark-gray-color: #212121;
   --pink-color: #ff4655;
   --white-color: #fff;
   --gray-color: #666;
@@ -286,6 +287,161 @@ nav .navbarRight span {
 #About .title_width {
   max-width: 518px;
 }
+/* About The Biggest Hancok Section  */
+#About .aboutContant {
+  display: flex;
+  gap: 83px;
+  padding: 65px 0;
+  align-items: flex-start;
+}
+#About .imgSide {
+  position: relative;
+}
+#About .imgSide::before {
+  content: "";
+  width: 163px;
+  height: 7px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background: var(--pink-color);
+}
+#About .imgSide::after {
+  content: "";
+  width: 7px;
+  height: 163px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  background: var(--pink-color);
+}
+#About .imgSide img {
+  width: 700px;
+}
+#About .summery {
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  align-items: flex-start;
+  color: var(--white-color);
+}
+#About .summery h3 {
+  font-family: var(--oswald-font);
+  font-size: 27px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.81px;
+  text-transform: uppercase;
+}
+#About .summery ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: flex-start;
+  font-family: var(--barlow-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+#About .summery ul li {
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+}
+#About .summery ul li:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  font-weight: 500;
+  color: var(--pink-color);
+}
+#About .summery ul li span {
+  color: var(--pink-color);
+  margin-right: 10px;
+}
+#About .summery p {
+  font-family: var(--oswald-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 6px;
+}
+#About .summery button {
+  max-width: 130px;
+  height: 50px;
+  background: var(--dark-gray-color);
+  padding: 13px 20px;
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  font-weight: 400;
+  font-family: var(--oswald-font);
+  line-height: normal;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  border: none;
+  margin-top: 30px;
+}
+#About .summery button:hover {
+  background: var(--pink-color);
+  color: var(--white-color);
+}
+#About .summery button span {
+  margin-left: 7px;
+}
+#About .aboutAchivment {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+#About .achivmentBox {
+  padding: 26px 0;
+  width: 315px;
+  background: var(--dark-gray-color);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  align-items: center;
+}
+#About .achivmentBox h3 {
+  font-size: 60px;
+  font-family: var(--barlow-font);
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  line-height: normal;
+  position: relative;
+}
+#About .achivmentBox h3::after {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  content: "";
+  background: var(--pink-color);
+  bottom: 10px;
+  right: -20px;
+  position: absolute;
+}
+#About .achivmentBox p {
+  font-family: var(--oswald-font);
+  font-weight: 300;
+  letter-spacing: 0.36px;
+  line-height: normal;
+}
+/* About The Biggest Hancok Section  */
+
 /* Responsive with Media quarey */
 @media screen and (max-width: 570px) {
   nav {
@@ -327,5 +483,19 @@ nav .navbarRight span {
   }
   .heroSocialIcons {
     justify-content: center;
+  }
+  #About .aboutContant {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #About .imgSide img {
+    width: 100vw;
+  }
+  #About .summery {
+    padding: 0 15px;
+  }
+  #About .aboutAchivment {
+    flex-direction: column;
+    align-items: center;
   }
 }
