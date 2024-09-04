@@ -1372,15 +1372,24 @@ nav .navbarRight span {
 #Contact {
   background: var(--secondary-color);
 }
-/* #Contact .ContactContainer {
+#Contact .ContactContainer {
   position: relative;
-} */
+}
 #Contact .subscribeContainer {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: var(--pink-color);
   padding: 35px 16px 35px 30px;
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 #Contact .subscribeContainer h2 {
   max-width: 725px;
@@ -1437,67 +1446,156 @@ nav .navbarRight span {
   -ms-transform: scale(1.04);
   -o-transform: scale(1.04);
 }
-/* Contact Us section */
-/* Responsive with Media quarey */
-@media screen and (max-width: 570px) {
-  nav {
-    flex-direction: column;
-  }
-  nav .navLogo {
-    margin-bottom: 20px;
-  }
-  nav .navbarLeft {
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-  }
-  nav .navlink {
-    flex-direction: column;
-    width: 100%;
-  }
-  nav .navlink li {
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-  }
-  nav .navlink li:hover {
-    background: var(--pink-color);
-  }
-  nav .navlink li a {
-    font-size: 20px;
-  }
-  nav .navbarRight {
-    margin-top: 20px;
-    font-size: 20px;
-  }
-  .hero_contant {
-    text-align: center;
-    align-items: center;
-  }
-  .hero_contant h1 {
-    font-size: 48px;
-  }
-  .heroSocialIcons {
-    justify-content: center;
-  }
-  #About .aboutContant {
-    flex-direction: column;
-    gap: 20px;
-  }
-  #About .imgSide img {
-    width: 100vw;
-  }
-  #About .summery {
-    padding: 0 15px;
-  }
-  #About .aboutAchivment {
-    flex-direction: column;
-    align-items: center;
-  }
-  #Tornament .tornamentMatch {
-    flex-direction: column;
-  }
-  #Tornament .tornamentMatch .Matches {
-    flex-direction: column;
-  }
+#Contact .footerSection {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 112px;
+  /* margin-top: 30px; */
 }
+#Contact .footerSection .logoWithDetails {
+  max-width: 451px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: flex-start;
+}
+#Contact .footerSection .logoWithDetails > a {
+  color: var(--white-color);
+  font-size: 35px;
+  font-family: var(--barlow-font);
+  font-weight: 700;
+  letter-spacing: 1.05;
+  position: relative;
+}
+#Contact .footerSection .logoWithDetails > a::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: var(--pink-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  bottom: 7px;
+  right: -18px;
+}
+#Contact .footerSection .logoWithDetails p {
+  color: var(--gray-color);
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: var(--oswald-font);
+}
+#Contact .footerSection .logoWithDetails .socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
+  font-size: 25px;
+  margin-top: 30px;
+}
+#Contact .footerSection .logoWithDetails .socialIcons a {
+  color: var(--white-color);
+  height: 50px;
+  width: 50px;
+  background: var(--dark-gray-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+}
+#Contact .footerSection .logoWithDetails .socialIcons a:hover {
+  background: var(--pink-color);
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+#Contact .footerSection .Links h3,
+#Contact .footerSection .Teams h3,
+#Contact .footerSection .gallery h3 {
+  font-family: var(--barlow-font);
+  font-style: 25px;
+  font-weight: 600;
+  letter-spacing: 1.75px;
+  color: var(--white-color);
+}
+#Contact .footerSection .Links ul,
+#Contact .footerSection .Teams ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 30px;
+  margin-top: 30px;
+}
+#Contact .footerSection .Links ul a,
+#Contact .footerSection .Teams a {
+  color: var(--gray-color);
+  font-family: var(--oswald-font);
+  font-weight: 400;
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+}
+#Contact .footerSection .Links ul a:hover,
+#Contact .footerSection .Teams a:hover {
+  color: var(--pink-color);
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+#Contact .footerSection .gallery .imgWrapper {
+  max-width: 315px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#Contact .footerSection .gallery .imgWrapper img {
+  max-width: 102px;
+  width: 100%;
+  transition: 0.3s linear;
+  -webkit-transition: 0.3s linear;
+  -moz-transition: 0.3s linear;
+  -ms-transition: 0.3s linear;
+  -o-transition: 0.3s linear;
+}
+#Contact .footerSection .gallery .imgWrapper img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+#Contact .copyright {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  color: var(--white-color);
+  border-top: 1px solid var(--gray-color);
+  margin-top: 70px;
+}
+#Contact .copyright h2 {
+  font-family: var(--barlow-font);
+  font-style: 20px;
+  font-weight: 400;
+}
+#Contact .copyright span {
+  color: var(--pink-color);
+}
+/* Contact Us section */
