@@ -1281,6 +1281,93 @@ nav .navbarRight span {
 }
 /* Team Section */
 
+/* FAQ Section */
+#FAQ {
+  background: var(--primary-color);
+  padding: 55px 0 90px;
+}
+#FAQ .title_width {
+  max-width: 493px;
+}
+#FAQ .title_width::after {
+  right: 2%;
+}
+#FAQ .FAQ_ContantWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+#FAQ .FAQ_Container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 660px;
+  width: 100%;
+  padding: 0 121px 75px 0;
+  border-right: 1px solid var(--gray-color);
+  border-bottom: 1px solid var(--gray-color);
+  transition: 0.2s linear;
+  -webkit-transition: 0.2s linear;
+  -moz-transition: 0.2s linear;
+  -ms-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+}
+#FAQ .FAQ_Container:hover {
+  box-shadow: rgb(255, 70, 85, 0.2) 0px 7px 29px 0px;
+}
+#FAQ .second_FAQ {
+  border-right: none;
+  padding: 0 0px 75px 121px;
+}
+#FAQ .third_FAQ {
+  border-bottom: none;
+  padding: 75px 121px 0 0;
+}
+#FAQ .Fourth_FAQ {
+  border: none;
+  padding: 75px 0 0px 121px;
+}
+#FAQ .FAQ_Container .number {
+  width: 70px;
+  height: 70px;
+  color: var(--white-color);
+  text-align: center;
+  line-height: 70px;
+  font-family: var(--barlow-font);
+  font-weight: 600;
+  font-size: 38px;
+  background: var(--pink-color);
+  padding: 0 30px;
+}
+#FAQ .FAQ_Container .contant {
+  display: flex;
+  flex-direction: column;
+  column-gap: 11px;
+  align-items: flex-start;
+  max-width: 427px;
+}
+#FAQ .FAQ_Container .contant a {
+  color: var(--white-color);
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--barlow-font);
+  transition: color 0.2s linear;
+  -webkit-transition: color 0.2s linear;
+  -moz-transition: color 0.2s linear;
+  -ms-transition: color 0.2s linear;
+  -o-transition: color 0.2s linear;
+}
+#FAQ .FAQ_Container .contant a:hover {
+  color: var(--pink-color);
+}
+#FAQ .FAQ_Container .contant p {
+  font-size: 16px;
+  font-family: var(--oswald-font);
+  font-weight: 400;
+  color: var(--gray-color);
+}
+/* FAQ Section */
+
 /* Responsive with Media quarey */
 @media screen and (max-width: 570px) {
   nav {
