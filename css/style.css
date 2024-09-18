@@ -191,7 +191,11 @@ nav .navbarRight span {
 }
 /*============================ Hero Seciton ===================== */
 .hero_section {
+<<<<<<< HEAD
   background: url(../images/banner.png);
+=======
+  background: url(images/banner.png);
+>>>>>>> origin/main
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
